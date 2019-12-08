@@ -1,0 +1,27 @@
+{
+  "name": "burberry_test_task",
+  "version": "1.0.0",
+  "description": "Burberry test task",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon --exec mocha ./test/api/auth.js; nodemon --exec mocha ./test/api/products.js",
+    "start": "nodemon server.js"
+  },
+  "author": "Yana Lehkobyt",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.12",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "mockgoose": "^8.0.4",
+    "nodemon": "^2.0.1",
+    "supertest": "^4.0.2"
+  }
+}
